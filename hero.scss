@@ -1,6 +1,5 @@
 .hero {
     background: linear-gradient(to top, #48FFCB, #00D67E);
-    max-height: 1080px;
 
     &_bg {
         width: 100% !important;
@@ -33,14 +32,18 @@
 
             img {
                 width: 1000px;
+                max-height: calc(100dvh);
             }
         }
 
     }
 
     &_header {
+        opacity: 0;
+
         img {
             height: 220px;
+
         }
     }
 
@@ -50,6 +53,17 @@
         min-height: 300px;
         border-radius: 32px;
         border: 8px solid #000;
-        box-shadow: 16px 16px 0px #000
+        box-shadow: 16px 16px 0px #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+
+        &_inner {
+            max-width: 500px;
+            font-size: 32px;
+            font-family: 'luck';
+            text-align: center;
+        }
     }
 }

@@ -4,12 +4,28 @@ import { MotionPathPlugin, ScrollTrigger, TextPlugin } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, TextPlugin)
 import heroBg from './heroBg'
 import hideLoader from './hideLoader'
+import showBuko from './showBuko.js'
+import showHeroP from './showHeroP.js'
+import showHeroHeader from './showHeroHeader.js'
+import showHeroContent from './showHeroContent.js'
+import showHeader from './showHeader.js'
+import bukoAnim from './bukoAnim.js'
 
-
-
+const bukoAnimated = new Image();
+bukoAnimated.src = '/img/heroContent.gif';
 window.onload = function () {
     setTimeout(() => {
         heroBg()
+        hideLoader()
+        // Тут анимки на главной страничке (на главном экране)
+        setTimeout(async () => {
+            await showHeroHeader(gsap, 1)
+            await showHeroContent(gsap, 1)
+            showHeroP(gsap)
+            showHeader(gsap)
+            await showBuko(gsap, 1)
+            bukoAnim(bukoAnimated, 1)
+        }, 500);
 
 
         // gsap.to('.indexUsp_header', {
@@ -32,7 +48,6 @@ window.onload = function () {
         // mm.add("(max-width: 900px)", () => {
         //     animOrbit(gsap, 2)
         // });
-        hideLoader()
 
     }, 500);
 };

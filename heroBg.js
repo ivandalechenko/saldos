@@ -73,9 +73,6 @@ export default () => {
         const g = Math.round(rgb1[1] + (rgb2[1] - rgb1[1]) * percentage);
         const b = Math.round(rgb1[2] + (rgb2[2] - rgb1[2]) * percentage);
 
-        console.log(r, g, b);
-
-
         const clampedR = Math.min(255, Math.max(0, r));
         const clampedG = Math.min(255, Math.max(0, g));
         const clampedB = Math.min(255, Math.max(0, b));
