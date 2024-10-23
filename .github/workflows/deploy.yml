@@ -21,7 +21,7 @@ jobs:
             echo "TARGET_DIR=/home/saldos/dev" >> $GITHUB_ENV
             echo "BRANCH=dev" >> $GITHUB_ENV
           else
-            echo "TARGET_DIR=/home/saldos/prod" >> $GITHUB_ENV
+            echo "TARGET_DIR=/home/saldos" >> $GITHUB_ENV
             echo "BRANCH=master" >> $GITHUB_ENV
           fi
 
