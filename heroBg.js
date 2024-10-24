@@ -80,8 +80,8 @@ export default () => {
         return rgbToHex(clampedR, clampedG, clampedB);
     }
 
-    window.addEventListener('resize', function () {
-        renderHeroBg()
-    });
+    // window.addEventListener('resize', function () {
+    //     renderHeroBg()
+    // });
     renderHeroBg()
 }

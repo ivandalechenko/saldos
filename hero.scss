@@ -1,5 +1,7 @@
 .hero {
     background: linear-gradient(to top, #48FFCB, #00D67E);
+    position: relative;
+    z-index: 1;
 
     &_bg {
         width: 100% !important;
