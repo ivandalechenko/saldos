@@ -2,6 +2,9 @@
     background-color: #0B6CFF;
     padding: 40px;
     padding-bottom: 0px;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
 
     @media(max-width: 500px) {
         padding: 20px;
