@@ -133,6 +133,12 @@
             top: -50px;
             transform-origin: right;
 
+            @media(max-width: 800px) {
+                left: 0px;
+                justify-content: center !important;
+                margin-top: 300px;
+            }
+
             video {
                 transform: rotate(-10deg);
                 border: 4px solid #000;
