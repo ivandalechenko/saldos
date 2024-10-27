@@ -7,7 +7,7 @@ export default (gsap) => {
             scrub: 1,
             // markers: true,
             start: '0% 80%',
-            end: '20% 80%',
+            end: '15% 80%',
         }
     })
     gsap.fromTo('.roadmap_step_1', {
@@ -20,8 +20,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '20% 80%',
-            end: '40% 80%',
+            start: '15% 80%',
+            end: '25% 80%',
         }
     })
     gsap.to('.roadmap_step_content_1', {
@@ -31,8 +31,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '40% 80%',
-            end: '50% 80%',
+            start: '25% 80%',
+            end: '40% 80%',
         }
     })
     gsap.fromTo('.roadmap_step_2', {
@@ -45,8 +45,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '50% 80%',
-            end: '70% 80%',
+            start: '40% 80%',
+            end: '50% 80%',
         }
     })
     gsap.to('.roadmap_step_content_2', {
@@ -56,8 +56,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '70% 80%',
-            end: '80% 80%',
+            start: '50% 80%',
+            end: '65% 80%',
         }
     })
     gsap.fromTo('.roadmap_step_3', {
@@ -70,8 +70,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '80% 80%',
-            end: '100% 80%',
+            start: '65% 80%',
+            end: '80% 80%',
         }
     })
     gsap.to('.roadmap_step_content_3', {
@@ -81,8 +81,22 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '100% 80%',
-            end: '110% 80%',
+            start: '80% 80%',
+            end: '100% 80%',
+        }
+    })
+    gsap.fromTo('.roadmap_step_decor', {
+        scale: 2,
+        opacity: 0,
+    }, {
+        scale: 1,
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '.roadmap',
+            scrub: 1,
+            // markers: true,
+            start: '80% 80%',
+            end: '85% 80%',
         }
     })
 }
