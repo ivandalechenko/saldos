@@ -10,6 +10,7 @@ import showHeroHeader from './showHeroHeader.js'
 import showHeroContent from './showHeroContent.js'
 import showHeader from './showHeader.js'
 import bukoAnim from './bukoAnim.js'
+import roadmap from './roadmap.js'
 
 const bukoAnimated = new Image();
 bukoAnimated.src = '/img/heroContent.gif';
@@ -27,6 +28,23 @@ window.onload = function () {
             bukoAnim(bukoAnimated, 1)
         }, 500);
 
+        roadmap(gsap)
+
+
+        // gsap.fromTo('.roadmap_header', {
+        //     opacity: 0,
+        //     scale: 0.8,
+        // }, {
+        //     opacity: 1,
+        //     scale: 1,
+        //     scrollTrigger: {
+        //         trigger: '.indexIntroducing',
+        //         scrub: 1,
+        //         // markers: true,
+        //         start: 'top 70%',
+        //         end: '100% 70%',
+        //     }
+        // })
 
         // gsap.to('.indexUsp_header', {
         //     opacity: 1,
@@ -43,10 +61,6 @@ window.onload = function () {
         //     indexRoadmap(gsap)
         //     indexGetting(gsap)
         //     animOrbit(gsap)
-        // });
-
-        // mm.add("(max-width: 900px)", () => {
-        //     animOrbit(gsap, 2)
         // });
 
     }, 500);
