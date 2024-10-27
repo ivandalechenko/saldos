@@ -1,4 +1,6 @@
 export default (gsap) => {
+    const persentPerEl = 11;
+
     gsap.to('.roadmap_header', {
         text: {
             value: "ROADMAP"
@@ -6,8 +8,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '0% 80%',
-            end: '15% 80%',
+            start: `${persentPerEl * 0}% 80%`,
+            end: `${persentPerEl * 1}% 80%`,
         }
     })
     gsap.fromTo('.roadmap_step_1', {
@@ -20,8 +22,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '15% 80%',
-            end: '25% 80%',
+            start: `${persentPerEl * 1}% 80%`,
+            end: `${persentPerEl * 2}% 80%`,
         }
     })
     gsap.to('.roadmap_step_content_1', {
@@ -31,8 +33,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '25% 80%',
-            end: '40% 80%',
+            start: `${persentPerEl * 2}% 80%`,
+            end: `${persentPerEl * 3}% 80%`,
         }
     })
     gsap.fromTo('.roadmap_step_2', {
@@ -45,8 +47,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '40% 80%',
-            end: '50% 80%',
+            start: `${persentPerEl * 3}% 80%`,
+            end: `${persentPerEl * 4}% 80%`,
         }
     })
     gsap.to('.roadmap_step_content_2', {
@@ -56,8 +58,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '50% 80%',
-            end: '65% 80%',
+            start: `${persentPerEl * 4}% 80%`,
+            end: `${persentPerEl * 5}% 80%`,
         }
     })
     gsap.fromTo('.roadmap_step_3', {
@@ -70,8 +72,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '65% 80%',
-            end: '80% 80%',
+            start: `${persentPerEl * 5}% 80%`,
+            end: `${persentPerEl * 6}% 80%`,
         }
     })
     gsap.to('.roadmap_step_content_3', {
@@ -81,8 +83,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '80% 80%',
-            end: '100% 80%',
+            start: `${persentPerEl * 6}% 80%`,
+            end: `${persentPerEl * 7}% 80%`,
         }
     })
     gsap.fromTo('.roadmap_step_decor', {
@@ -95,8 +97,8 @@ export default (gsap) => {
             trigger: '.roadmap',
             scrub: 1,
             // markers: true,
-            start: '80% 80%',
-            end: '85% 80%',
+            start: `${persentPerEl * 7}% 80%`,
+            end: `${persentPerEl * 7}% 80%`,
         }
     })
 }

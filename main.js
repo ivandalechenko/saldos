@@ -11,6 +11,11 @@ import showHeroContent from './showHeroContent.js'
 import showHeader from './showHeader.js'
 import bukoAnim from './bukoAnim.js'
 import roadmap from './roadmap.js'
+import tokenomics from './tokenomics.js'
+import numbers from './numbers.js'
+import htb from './htb.js'
+
+
 
 const bukoAnimated = new Image();
 bukoAnimated.src = '/img/heroContent.gif';
@@ -29,6 +34,9 @@ window.onload = function () {
         }, 500);
 
         roadmap(gsap)
+        tokenomics(gsap)
+        numbers(gsap)
+        htb(gsap)
 
 
         // gsap.fromTo('.roadmap_header', {

@@ -16,11 +16,24 @@
         column-gap: 50px;
         animation: 6s infinite linear runtext;
 
+        @media(max-width: 800px) {
+            height: 100px;
+        }
+
+        @media(max-width: 800px) {
+            font-size: 60px;
+        }
+
         &_vl {
             min-width: 10px;
             min-height: 120px;
             background-color: #000;
             border-radius: 8px;
+
+            @media(max-width: 800px) {
+                min-height: 80px;
+            }
+
         }
 
         @keyframes runtext {
