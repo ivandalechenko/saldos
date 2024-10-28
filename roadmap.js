@@ -1,5 +1,5 @@
 export default (gsap) => {
-    const persentPerEl = 11;
+    const persentPerEl = 12;
 
     gsap.to('.roadmap_header', {
         text: {
