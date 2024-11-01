@@ -14,6 +14,7 @@ import roadmap from './roadmap.js'
 import tokenomics from './tokenomics.js'
 import numbers from './numbers.js'
 import htb from './htb.js'
+import htbbg from './htbbg.js'
 
 
 
@@ -37,39 +38,7 @@ window.onload = function () {
         tokenomics(gsap)
         numbers(gsap)
         htb(gsap)
-
-
-        // gsap.fromTo('.roadmap_header', {
-        //     opacity: 0,
-        //     scale: 0.8,
-        // }, {
-        //     opacity: 1,
-        //     scale: 1,
-        //     scrollTrigger: {
-        //         trigger: '.indexIntroducing',
-        //         scrub: 1,
-        //         // markers: true,
-        //         start: 'top 70%',
-        //         end: '100% 70%',
-        //     }
-        // })
-
-        // gsap.to('.indexUsp_header', {
-        //     opacity: 1,
-        //     duration: 2,
-        //     delay: 1,
-        // })
-
-        // gsap.to('.indexUsp_p', { duration: 2, text: { value: "Blurring the lines between Web2 and Web3" } })
-        // let mm = gsap.matchMedia();
-        // mm.add("(min-width: 900px)", () => {
-        //     teamList(ScrollTrigger, gsap)
-        //     uspAnim(gsap)
-        //     indexIntroducing(gsap)
-        //     indexRoadmap(gsap)
-        //     indexGetting(gsap)
-        //     animOrbit(gsap)
-        // });
+        htbbg(gsap)
 
     }, 500);
 };

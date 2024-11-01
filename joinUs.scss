@@ -14,13 +14,15 @@
     }
 
     &_content {
-        min-width: 160%;
+        // min-width: 160%;
         position: relative;
-        top: -300px;
+        // top: -300px;
         background-color: #fff;
         border-top: 8px solid #000;
+        width: 100%;
+        padding-bottom: 120px;
         // height: 500px;
-        border-radius: 100% 100% 0px 0px;
+        // border-radius: 100% 100% 0px 0px;
 
         &_wrapper {
             display: flex;
@@ -118,6 +120,203 @@
         color: #fff;
         padding: 0px 32px;
         padding-top: 12px;
+    }
+
+}
+
+
+
+.joinUs_newBg {
+    height: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-top: 10px solid #000;
+
+    &_boat {
+        top: 17vw;
+
+        animation: boatanim 1.5s infinite ease-in-out;
+
+        @keyframes boatanim {
+            0% {
+                translate: 0px 0px;
+            }
+
+            50% {
+                translate: 0px -2vw;
+            }
+
+            100% {
+                translate: 0px 0vw;
+            }
+        }
+
+        img {
+            width: 50vw;
+        }
+    }
+
+    &_sea {
+        align-items: start;
+        top: -10vw;
+        animation: seaanim 5s infinite linear;
+
+        @keyframes seaanim {
+            0% {
+                translate: 0px 0px;
+            }
+
+            100% {
+                translate: 50vw 0px;
+            }
+        }
+
+        img {
+            width: 50vw;
+        }
+    }
+
+    &_backsea {
+        // top: 50vh;
+        align-items: start;
+        top: -10vw;
+
+        animation: backseaanim 8s infinite linear;
+
+        @keyframes backseaanim {
+            0% {
+                translate: 0px 0px;
+            }
+
+            100% {
+                translate: 50vw 0px;
+            }
+        }
+
+        img {
+            width: 50vw;
+        }
+    }
+
+    &_beach {
+        top: 10vw;
+
+        animation: beach 50s infinite linear;
+
+        @keyframes beach {
+            0% {
+                translate: 0px 0px;
+            }
+
+            100% {
+                translate: 100vw 0px;
+            }
+        }
+
+        img {
+            width: 100vw;
+        }
+    }
+
+    &_palms {
+        top: 12vw;
+
+        animation: palms 20s infinite linear;
+
+        @keyframes palms {
+            0% {
+                translate: 0px 0px;
+            }
+
+            100% {
+                translate: 80vw 0px;
+            }
+        }
+
+        img {
+            width: 80vw;
+        }
+    }
+
+    &_cloud1,
+    &_cloud2,
+    &_cloud3,
+    &_cloud4 {
+        top: 5vw;
+
+        animation: cloud 80s infinite linear;
+
+        @keyframes cloud {
+            0% {
+                translate: 0px 0px;
+            }
+
+            100% {
+                translate: 80vw 0px;
+            }
+        }
+
+        img {
+            width: 80vw;
+        }
+    }
+
+    &_cloud1 {
+        animation: cloud 80s infinite linear;
+
+        @keyframes cloud {
+            0% {
+                translate: 0px 0px;
+            }
+
+            100% {
+                translate: 80vw 0px;
+            }
+        }
+    }
+
+    &_cloud2 {
+        animation: cloud 120s infinite linear;
+
+        @keyframes cloud {
+            0% {
+                translate: 0px 0px;
+            }
+
+            100% {
+                translate: 80vw 0px;
+            }
+        }
+    }
+
+    &_cloud3 {
+        animation: cloud 40s infinite linear;
+
+        @keyframes cloud {
+            0% {
+                translate: 0px 0px;
+            }
+
+            100% {
+                translate: 80vw 0px;
+            }
+        }
+    }
+
+    &_cloud4 {
+        animation: cloud 60s infinite linear;
+
+        @keyframes cloud {
+            0% {
+                translate: 0px 0px;
+            }
+
+            100% {
+                translate: 80vw 0px;
+            }
+        }
     }
 
 }

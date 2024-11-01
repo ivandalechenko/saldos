@@ -149,6 +149,20 @@
         }
     }
 
+    &_seks {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        align-items: end;
+        top: 100px;
+        // left: 300px;
+        margin-top: 150px;
+
+        img {
+            width: 300px;
+        }
+    }
+
     &_steps {
         display: flex;
         flex-wrap: wrap;
@@ -202,7 +216,7 @@
         }
 
         &_right {
-            font-size: 32px;
+            font-size: 22px;
             width: 100%;
             font-family: 'lil';
             padding-left: 24px;

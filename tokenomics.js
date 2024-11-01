@@ -76,7 +76,7 @@ export default (gsap) => {
     })
     gsap.to('.tokenomics_element_1_h', {
         text: {
-            value: "SUPPLY"
+            value: "TICKER"
         }, scrollTrigger: {
             trigger: '.tokenomics',
             scrub: 1,
@@ -87,7 +87,7 @@ export default (gsap) => {
     })
     gsap.to('.tokenomics_element_1_v', {
         text: {
-            value: "33.3 %"
+            value: "$BUKO"
         }, scrollTrigger: {
             trigger: '.tokenomics',
             scrub: 1,
@@ -98,7 +98,7 @@ export default (gsap) => {
     })
     gsap.to('.tokenomics_element_2_h', {
         text: {
-            value: "TAXES"
+            value: "CHAIN"
         }, scrollTrigger: {
             trigger: '.tokenomics',
             scrub: 1,
@@ -109,7 +109,7 @@ export default (gsap) => {
     })
     gsap.to('.tokenomics_element_2_v', {
         text: {
-            value: "33.3 %"
+            value: "BASE"
         }, scrollTrigger: {
             trigger: '.tokenomics',
             scrub: 1,
@@ -120,7 +120,7 @@ export default (gsap) => {
     })
     gsap.to('.tokenomics_element_3_h', {
         text: {
-            value: "LIQUIDITY"
+            value: "SUPPLY"
         }, scrollTrigger: {
             trigger: '.tokenomics',
             scrub: 1,
@@ -131,13 +131,88 @@ export default (gsap) => {
     })
     gsap.to('.tokenomics_element_3_v', {
         text: {
-            value: "33.3 %"
+            value: "1BIL"
         }, scrollTrigger: {
             trigger: '.tokenomics',
             scrub: 1,
             // markers: true,
             start: `${persentPerEl * (start + 5)}px 80% `,
             end: `${persentPerEl * (start + 6)}px 80% `,
+        }
+    })
+
+
+    gsap.fromTo('.tokenomics_element_4', {
+        x: -100,
+        opacity: 0,
+    }, {
+        x: 0,
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '.tokenomics',
+            scrub: 1,
+            // markers: true,
+            start: `${persentPerEl * (start + 7)}px 80% `,
+            end: `${persentPerEl * (start + 8)}px 80% `,
+        }
+    })
+    gsap.to('.tokenomics_element_4_h', {
+        text: {
+            value: "LIQUIDITY"
+        }, scrollTrigger: {
+            trigger: '.tokenomics',
+            scrub: 1,
+            // markers: true,
+            start: `${persentPerEl * (start + 9)}px 80% `,
+            end: `${persentPerEl * (start + 9)}px 80% `,
+        }
+    })
+    gsap.to('.tokenomics_element_4_v', {
+        text: {
+            value: "BURNED"
+        }, scrollTrigger: {
+            trigger: '.tokenomics',
+            scrub: 1,
+            // markers: true,
+            start: `${persentPerEl * (start + 9)}px 80% `,
+            end: `${persentPerEl * (start + 9)}px 80% `,
+        }
+    })
+
+    gsap.fromTo('.tokenomics_element_5', {
+        x: 100,
+        opacity: 0,
+    }, {
+        x: 0,
+        opacity: 1,
+        scrollTrigger: {
+            trigger: '.tokenomics',
+            scrub: 1,
+            // markers: true,
+            start: `${persentPerEl * (start + 7)}px 80% `,
+            end: `${persentPerEl * (start + 8)}px 80% `,
+        }
+    })
+    gsap.to('.tokenomics_element_5_h', {
+        text: {
+            value: "CONTRACT"
+        }, scrollTrigger: {
+            trigger: '.tokenomics',
+            scrub: 1,
+            // markers: true,
+            start: `${persentPerEl * (start + 9)}px 80% `,
+            end: `${persentPerEl * (start + 9)}px 80% `,
+        }
+    })
+    gsap.to('.tokenomics_element_5_v', {
+        text: {
+            value: "RENOUNCED"
+        }, scrollTrigger: {
+            trigger: '.tokenomics',
+            scrub: 1,
+            // markers: true,
+            start: `${persentPerEl * (start + 9)}px 80% `,
+            end: `${persentPerEl * (start + 9)}px 80% `,
         }
     })
 

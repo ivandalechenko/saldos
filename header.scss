@@ -57,9 +57,8 @@
     &_link {
         font-family: 'luck';
         font-size: 24px;
-        transition: transform 200ms, text-shadow 200ms;
+        transition: color 200ms, text-shadow 200ms;
         // text-shadow: 0px 0px #0003;
-        color: #fff;
         color: #000;
 
 
@@ -73,6 +72,17 @@
             -2px 0px #fff;
 
         &:hover {
+            color: #fff;
+
+
+            text-shadow: 2px 2px #000,
+                -2px -2px #000,
+                -2px 2px #000,
+                2px -2px #000,
+                0px -2px #000,
+                0px 2px #000,
+                2px 0px #000,
+                -2px 0px #000;
             // transform: translate(-3px, -3px);
             // text-shadow: 3px 3px #0003;
             // text-shadow: 3px 3px #0003;
