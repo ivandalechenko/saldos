@@ -104,6 +104,10 @@ button {
     color: black;
 }
 
+video::-webkit-media-controls {
+    display: none !important;
+}
+
 .dnone {
     display: none;
 }
