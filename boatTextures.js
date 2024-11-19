@@ -9,7 +9,7 @@ export default async () => {
     textures.cloud3 = await Assets.load('/img/boat/cloud3.png');
     textures.cloud4 = await Assets.load('/img/boat/cloud4.png');
     textures.palms = await Assets.load('/img/boat/palms.png');
-    textures.backsea = await Assets.load('/img/boat/backsea.png');
+    textures.backSea = await Assets.load('/img/boat/backsea.png');
     textures.boat = await Assets.load('/img/boat/boat.png');
     textures.sea = await Assets.load('/img/boat/sea.png');
 
