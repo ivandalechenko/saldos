@@ -127,6 +127,10 @@
 
 #joinUs_newBg {
     border-top: 10px solid #000;
+
+    canvas {
+        touch-action: manipulation !important;
+    }
 }
 
 // .joinUs_newBg {
