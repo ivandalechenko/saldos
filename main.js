@@ -15,6 +15,7 @@ import tokenomics from './tokenomics.js'
 import numbers from './numbers.js'
 import htb from './htb.js'
 import htbbg from './htbbg.js'
+import boat from './boat.js'
 
 
 
@@ -39,7 +40,7 @@ window.onload = function () {
         numbers(gsap)
         htb(gsap)
         htbbg(gsap)
-
+        boat()
     }, 500);
 };
 
