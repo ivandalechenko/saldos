@@ -1,6 +1,6 @@
 .roadmap {
     background-color: #0B6CFF;
-    padding: 60px 30px;
+    padding: 120px 30px;
     // padding-bottom: 0px;
     position: relative;
     z-index: 3;
@@ -8,7 +8,7 @@
     border-bottom: 6px solid #000;
 
     @media(max-width: 500px) {
-        padding: 20px;
+        padding: 40px 20px;
         padding-bottom: 0px;
     }
 
